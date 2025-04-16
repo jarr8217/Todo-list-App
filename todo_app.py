@@ -1,7 +1,7 @@
 # Todo CLI Application
 # Welcome message and menu display
 
-tasks = ['Laundry', 'Study', 'Go to work', 'Read atleast 10 pages', 'Food shopping', 'fill car up with gas']
+tasks = ['laundry', 'grocery shopping', 'cleaning', 'exercise', 'study', 'reading', 'cooking', 'writing', 'coding']
 
 # Main menu display 
 def display_menu():
@@ -36,21 +36,24 @@ def view_tasks():
 
 # Function to delete a task from the todo list
 def delete_task():
-    view_tasks()
-
     if not tasks:
         print('No tasks in the todo list.')
         return
 
+    print(f'Current to-do tasks ({len(tasks)}):')
+    for i, task in enumerate(tasks, 1):
+        print(f'{i}. {task}')
 
     try:
         idx = int(input('Enter the task number you want to delete: ')) - 1
 
         if 0 <= idx < len(tasks):
             task_to_delete = tasks[idx]
-            confirm = input(f'Are you sure you want to delete "{task_to_delete}"? (y/n): ').strip().lower()
-        
-            if confirm =='y' or confirm == 'yes':
+            print('------------------------')
+            print(f'Task: "{task_to_delete}"')
+            confirm = input('Are you sure you want to delete this task? (y/n): ').strip().lower()
+
+            if confirm in ['y', 'yes']:
                 tasks.pop(idx)
                 print(f'Task "{task_to_delete}" deleted successfully.')
             else:
@@ -59,8 +62,7 @@ def delete_task():
             print('Invalid task number. Please try again.')
 
     except ValueError:
-        print('Invalid input.')
-
+        print('Invalid input. Please enter a number.')
 def main():
 
     while True:
