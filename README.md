@@ -11,9 +11,10 @@ The Todo CLI Application is a simple command-line interface (CLI) program writte
 
 - Add new tasks to your to-do list.
 - View all current tasks with a count of total tasks.
-- Delete tasks with confirmation to prevent accidental deletions.
+- Delete tasks with confirmation to prevent accidental deletions. The app prompts users to confirm with 'y' or 'n' before removing the selected task.
 - Input validation for menu options and task names.
 - Runs directly in the terminal or command line.
+- 
 
 This project demonstrates best practices in Python programming, including modular function design, validation, and user interaction.
 
