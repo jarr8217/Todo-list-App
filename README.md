@@ -19,27 +19,6 @@ This project demonstrates best practices in Python programming, including modula
 
 ---
 
-## Installation and Running
-
-To set up and run the application locally, follow these steps:
-
-1. **Clone the Repository**
-   ```bash
-   git clone https://github.com/your-username/todo-cli.git
-   cd todo-cli
-   ```
-
-2. **Run the Application**
-   ```bash
-   python todo.py
-   ```
-
-3. **Usage**
-   - Follow the menu prompts to add, view, or delete tasks.
-   - Exit the application using the menu option.
-
----
-
 ## Example Usage
 
 ### Adding a Task
