@@ -42,6 +42,10 @@ Are you sure you want to delete "Buy groceries"? (y/n): y
 Task "Buy groceries" deleted successfully.
 ```
 
+## How to run
+- Make sure Python 3 is installed.
+- Open terminal and run.
+```bash
 ---
 
 
